@@ -1,128 +1,121 @@
 Auth: |
-  <b>Auth Users can use Admin commands without admin rights in your chat.</b>
+  <b>کاربران مجاز می‌توانند بدون داشتن دسترسی ادمین، از دستورات ادمینی استفاده کنند.</b>
 
-  <b>✧ {0}</b> [Username] - Add a user to AUTH LIST of the Group.
+  <b>✧ {0}</b> [نام‌کاربری] - افزودن کاربر به فهرست مجاز گروه.
 
-  <b>✧ {1}</b> [Username] - Remove a user from AUTH LIST of the group.
+  <b>✧ {1}</b> [نام‌کاربری] - حذف کاربر از فهرست مجاز گروه.
 
-  <b>✧ {2}</b> - Check AUTH LIST of the Group.
+  <b>✧ {2}</b> - بررسی فهرست کاربران مجاز گروه.
 
 Admin: |
-  <b>c stands for channel play</b>
+  <b>c به معنای پخش از کانال است</b>
 
-  <b>✧ {0}</b> - Pause the playing music.
-  <b>✧ {1}</b> - Resume the paused music.
-  <b>✧ {2}</b> - Mute the playing music.
-  <b>✧ {3}</b> - Unmute the muted music.
-  <b>✧ {4}</b> - Skip the current playing music.
-  <b>✧ {5}</b> - Stop the playing music.
-  <b>✧ {6}</b> - Randomly shuffle the queued playlist/songs.
-  <b>✧ {7}</b> - Forward seek the music.
-  <b>✧ {8}</b> - Backward seek the music to your duration.
-  <b>✧ {9}</b> - Reboot bot for your chat.
+  <b>✧ {0}</b> - توقف پخش موسیقی.
+  <b>✧ {1}</b> - ادامه پخش موسیقی متوقف‌شده.
+  <b>✧ {2}</b> - بی‌صدا کردن موسیقی در حال پخش.
+  <b>✧ {3}</b> - خارج کردن از بی‌صدا.
+  <b>✧ {4}</b> - رد کردن آهنگ در حال پخش.
+  <b>✧ {5}</b> - توقف کامل پخش موسیقی.
+  <b>✧ {6}</b> - پخش تصادفی آهنگ‌های داخل صف.
+  <b>✧ {7}</b> - جلو بردن زمان پخش.
+  <b>✧ {8}</b> - عقب بردن زمان پخش به مدت دلخواه.
+  <b>✧ {9}</b> - راه‌اندازی مجدد ربات برای چت شما.
 
-  <b>✧ {4}</b> [Number (Example: 3)] - Skip music to a specific number. Example: <b>/skip 3</b> will skip to the third queued music and will ignore 1 and 2 in the queue.
+  <b>✧ {4}</b> [عدد (مثال: 3)] - رد شدن به آهنگ خاصی در صف. مثال: <b>/skip 3</b> به آهنگ سوم می‌پرد و ۱ و ۲ را نادیده می‌گیرد.
 
-  <b>✧ {10}</b> [Enable/Disable] or [Number between 1-10] - When activated, the bot will loop the current music 1-10 times in voice chat. Default loop value is 10 times.
-
+  <b>✧ {10}</b> [فعال/غیرفعال] یا [عدد بین ۱ تا ۱۰] - وقتی فعال شود، ربات آهنگ فعلی را بین ۱ تا ۱۰ بار در ویس‌چت تکرار می‌کند (پیش‌فرض ۱۰ بار است).
 
 Active: |
-  <b>✧ {0}</b> - Check active voice chats on the bot.
+  <b>✧ {0}</b> - بررسی ویس‌چت‌های فعال در ربات.
 
-  <b>✧ {1}</b> - Check active voice and video calls on the bot.
+  <b>✧ {1}</b> - بررسی ویس‌چت و ویدیو چت‌های فعال در ربات.
 
-  <b>✧ {2}</b> - Check active video calls on the bot.
+  <b>✧ {2}</b> - بررسی ویدیو چت‌های فعال در ربات.
 
-  <b>✧ {3}</b> - Check bot stats.
+  <b>✧ {3}</b> - بررسی وضعیت ربات.
 
 Play: |
-  <b>✧ {0}</b> - Bot will start playing your given query on voice chat or stream live links on voice chats.
+  <b>✧ {0}</b> - پخش موسیقی در ویس‌چت یا پخش زنده لینک در ویس‌چت.
 
-  <b>✧ {1}</b> - Force Play stops the current playing track on voice chat and starts playing the searched track instantly without disturbing/clearing the queue.
+  <b>✧ {1}</b> - پخش اجباری: آهنگ فعلی را متوقف کرده و بلافاصله آهنگ جدید را پخش می‌کند بدون حذف صف.
 
-  <b>✧ {2}</b> - Connect channel to a group and stream music on channel's voice chat from your group.
+  <b>✧ {2}</b> - اتصال کانال به گروه و پخش موسیقی در ویس‌چت کانال از گروه شما.
 
-  <b>✧ {3}</b> - Stream a URL that you believe is direct or m3u8 that can't be played by /play.
+  <b>✧ {3}</b> - پخش یک لینک مستقیم یا m3u8 که با دستور /play پخش نمی‌شود.
 
 G-cast: |
-  <b>{0} [Message or Reply to any message]</b> » Broadcast a message to served chats of bot
-  <u>Broadcasting Modes:</u>
+  <b>{0} [پیام یا ریپلای به پیام]</b> » ارسال پیام همگانی به تمام چت‌های ربات  
+  <u>حالت‌های پخش پیام همگانی:</u>
 
-  <b><code>-pin</code></b> » Pins your broadcasted message in served chats
+  <b><code>-pin</code></b> » سنجاق کردن پیام ارسال‌شده در چت‌ها  
+  <b><code>-pinloud</code></b> » سنجاق پیام و ارسال اعلان به اعضا  
+  <b><code>-user</code></b> » ارسال پیام به کاربران شخصی که ربات را استارت کرده‌اند  
+  <b><code>-assistant</code></b> » ارسال پیام توسط اکانت‌های کمکی ربات  
+  <b><code>-nobot</code></b> » جلوگیری از ارسال پیام توسط اکانت اصلی ربات (مثلاً فقط در چت‌های کاربر)
 
-  <b><code>-pinloud</code></b> » Pins your broadcasted message in served chats and sends notification to the members
-
-  <b><code>-user</code></b> » Broadcast the message to users who have started your bot [You can also pin the message by adding `-pin` or `-pinloud`]
-
-  <b><code>-assistant</code></b> » Broadcast your message through all assistants of the bot
-
-  <b><code>-nobot</code></b> » Ensures that the **bot** doesn't broadcast the message [Useful when you don't want to broadcast the message to groups]
-
-  > <b>Example:</b> <code>/{0} -user -assistant -pin Testing broadcast</code>
-
+  > <b>مثال:</b> <code>/{0} -user -assistant -pin پیام آزمایشی</code>
 
 Bot: |
-  <b>★ {0}</b> - Get Top 10 Tracks Global Stats, Top 10 Users of Bot, Top 10 Chats on Bot, Top 10 Played in a chat, etc.
+  <b>★ {0}</b> - مشاهده ۱۰ آهنگ برتر، ۱۰ کاربر برتر، ۱۰ چت برتر، و دیگر آمارهای مرتبط.
 
-  <b>★ {1}</b> - Check Sudo users of the bot.
+  <b>★ {1}</b> - بررسی کاربران سودو ربات.
 
-  <b>★ {2} [Music Name]</b> - Search lyrics for the particular music on the web.
+  <b>★ {2} [نام آهنگ]</b> - جستجوی متن آهنگ در وب.
 
-  <b>★ {3} [Track Name] or [YT Link]</b> - Download any track from YouTube in MP3 or MP4 formats.
+  <b>★ {3} [نام آهنگ یا لینک یوتیوب]</b> - دانلود آهنگ از یوتیوب در فرمت MP3 یا MP4.
 
-  <b>★ {4}</b> - Check the queue list of music.
+  <b>★ {4}</b> - نمایش صف آهنگ‌های در حال پخش.
 
-  <u><b>⚡️Private Bot:</b></u>
-      
-  <b>✧ {5} [CHAT_ID]</b> - Allow a chat to use your bot.
+  <u><b>⚡️ربات خصوصی:</b></u>
 
-  <b>✧ {6} [CHAT_ID]</b> - Disallow a chat from using your bot.
+  <b>✧ {5} [شناسه چت]</b> - اجازه دادن به یک چت برای استفاده از ربات.
 
-  <b>✧ {7}</b> - Check all allowed chats of your bot.
+  <b>✧ {6} [شناسه چت]</b> - ممنوع کردن چت از استفاده از ربات.
 
+  <b>✧ {7}</b> - نمایش همه چت‌هایی که اجازه استفاده از ربات را دارند.
 
 P-List: |
-  <b>{0}</b> - Check your whole playlist on the bot server
+  <b>{0}</b> - نمایش لیست آهنگ‌های ذخیره‌شده در سرور ربات.
 
-  <b>{1}</b> - Delete any song from your saved playlist 
+  <b>{1}</b> - حذف آهنگی از لیست پخش ذخیره‌شده.
 
-  <b>{2}</b> - Start playing your saved playlist in **audio**
+  <b>{2}</b> - شروع پخش لیست ذخیره‌شده به‌صورت صوتی.
 
-  <b>{3}</b> - Start playing your playlist in **video**
+  <b>{3}</b> - شروع پخش لیست ذخیره‌شده به‌صورت تصویری.
 
 B-list: |
-  <b>✧ {0}</b> [chat ID] - Blacklist any chat from using the Music Bot.
-  <b>✧ {1}</b> [chat ID] - Whitelist any blacklisted chat from using the Music Bot.
-  <b>✧ {2}</b> - Check all blocked chats.
+  <b>✧ {0}</b> [شناسه چت] - مسدود کردن یک چت از استفاده از ربات موسیقی.
+  <b>✧ {1}</b> [شناسه چت] - رفع مسدودیت چت.
+  <b>✧ {2}</b> - مشاهده فهرست چت‌های مسدودشده.
 
-  <b>✧ {3}</b> [Username or reply to a user] - Prevents a user from using bot commands.
-  <b>✧ {4}</b> [Username or reply to a user] - Remove a user from the bot's blocked list.
-  <b>✧ {5}</b> - Check the list of blocked users.
+  <b>✧ {3}</b> [نام‌کاربری یا ریپلای به کاربر] - مسدود کردن کاربر از استفاده از ربات.
+  <b>✧ {4}</b> [نام‌کاربری یا ریپلای به کاربر] - رفع مسدودیت کاربر.
+  <b>✧ {5}</b> - مشاهده لیست کاربران مسدودشده.
 
-  <b>✧ {6}</b> [Username or reply to a user] - Gban a user from all served chats and stop them from using your bot.
-  <b>✧ {7}</b> [Username or reply to a user] - Remove a user from the bot's gban list and allow them to use your bot.
-  <b>✧ {8}</b> - Check the list of gban users.
+  <b>✧ {6}</b> [نام‌کاربری یا ریپلای به کاربر] - بن کردن کاربر از همه چت‌ها و جلوگیری از استفاده از ربات.
+  <b>✧ {7}</b> [نام‌کاربری یا ریپلای به کاربر] - رفع بن کاربر از لیست بن شده‌ها.
+  <b>✧ {8}</b> - نمایش فهرست کاربران بن‌شده.
 
 Dev: |
-  <b><u>Add and remove sudoers:</u></b>
+  <b><u>افزودن و حذف کاربران سودو:</u></b>
 
-  <b>{0} [Username or reply to a user] - Add sudo in your bot</b>
-  <b>{1} [Username or userid or reply to a user] - Remove from bot sudoers</b>
-  <b>{2} - Get a list of all sudoers</b>
+  <b>{0} [نام‌کاربری یا ریپلای به کاربر] - افزودن به سودوهای ربات</b>
+  <b>{1} [نام‌کاربری یا شناسه یا ریپلای] - حذف از سودوهای ربات</b>
+  <b>{2} - نمایش لیست کاربران سودو</b>
 
-  <b><u>Heroku:</u></b>
+  <b><u>دستورات مرتبط با Heroku:</u></b>
 
-  <b>{3}</b> - Dyno usage
-  <b>{4} [Var Name]</b> - Get a config var from vars
-  <b>{5} [Var Name]</b> - Delete a var from vars
-  <b>{6} [Var Name] [Value]</b> - Add or update a var. Separate var and its value with a space
+  <b>{3}</b> - بررسی مصرف منابع dyno  
+  <b>{4} [نام متغیر]</b> - دریافت مقدار متغیر  
+  <b>{5} [نام متغیر]</b> - حذف یک متغیر  
+  <b>{6} [نام متغیر] [مقدار]</b> - افزودن یا به‌روزرسانی متغیرها با فاصله بین نام و مقدار
 
-  <b><u>Bot command:</u></b>
+  <b><u>دستورات ربات:</u></b>
 
-  <b>{7}</b> - Restart the bot (SUDOERS only)
-  <b>{8}</b> - Update the bot
-  <b>{9}</b> - Check server speeds
-  <b>{10} [enable / disable]</b> - Toggle bot maintenance mode
-  <b>{11} [enable / disable]</b> - Toggle bot logging of searched queries to log group
-  <b>{12} [Number of lines]</b> - Get logs from server
-  <b>{13} [enable / disable]</b> - Automatically end the stream after 30s if no one is listening to songs
+  <b>{7}</b> - ریستارت ربات (فقط سودوها)
+  <b>{8}</b> - به‌روزرسانی ربات
+  <b>{9}</b> - بررسی سرعت سرور
+  <b>{10} [enable / disable]</b> - فعال یا غیرفعال کردن حالت تعمیر ربات
+  <b>{11} [enable / disable]</b> - ثبت جستجوهای کاربران در گروه لاگ
+  <b>{12} [تعداد خطوط]</b> - دریافت لاگ سرور
+  <b>{13} [enable / disable]</b> - پایان خودکار پخش بعد از ۳۰ ثانیه در صورت نبود شنونده
