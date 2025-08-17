@@ -7,14 +7,14 @@ from typing import Union
 from ntgcalls import TelegramServerError
 from pyrogram.types import InlineKeyboardMarkup
 from pytgcalls import PyTgCalls, filters
-from pytgcalls.exceptions import AlreadyJoinedError
+from pytgcalls.exceptions import CallBusy
 from pytgcalls.types import (
     ChatUpdate,
     GroupCallConfig,
     MediaStream,
     Update,
 )
-from pytgcalls.types import StreamAudioEnded
+from pytgcalls.types import StreamEnded
 
 import config
 from strings import get_string
@@ -306,7 +306,7 @@ class Call:
                     "**No Active Voice Chat Found**\n\nPlease make sure group's voice chat is enabled. If already enabled, please end it and start fresh voice chat again and if the problem continues, try /restart"
                 )
 
-        except AlreadyJoinedError:
+        except CallBusy:
             raise AssistantErr(
                 "**ASSISTANT IS ALREADY IN VOICECHAT **\n\nMusic bot system detected that assistant is already in the voicechat, if the problem continues restart the videochat and try again."
             )
@@ -626,7 +626,7 @@ class Call:
 
             @call.on_update(filters.stream_end)
             async def stream_end_handler(client, update: Update):
-                if not isinstance(update, StreamAudioEnded):
+                if update.stream_type == StreamEnded.Type.AUDIO:
                     return
                 await self.change_stream(client, update.chat_id)
 
