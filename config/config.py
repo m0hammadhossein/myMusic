@@ -57,7 +57,7 @@ OWNER_ID = list(
 # make your bots privacy from telegra.ph and put your url here
 
 PRIVACY_LINK = getenv(
-    "PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-VenomMusic-01-02"
+    "PRIVACY_LINK", ""
 )
 
 
@@ -71,7 +71,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/venombolteop/Extra-plugins",
+    "",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
@@ -88,17 +88,15 @@ AUTO_LEAVE_ASSISTANT_TIME = int(
 
 
 
-# Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY", "")
+
 
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "")
 
 
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/venombolteop/VenomMusic",
+    "https://github.com/m0hammadhossein/myMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 

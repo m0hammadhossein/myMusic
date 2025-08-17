@@ -10,12 +10,12 @@ hachoir
 heroku3
 httpx[http2]
 motor
-pillow==9.5.0
+pillow
 psutil
 pytube
 pykeyboard
-py-tgcalls==2.0.6
-ntgcalls==1.2.3
+py-tgcalls
+ntgcalls
 python-dotenv
 pyyaml
 requests
