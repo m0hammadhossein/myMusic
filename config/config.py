@@ -109,11 +109,11 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/TomatoFist"
+    "SUPPORT_CHANNEL", ""
 )
 
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/Itz_venom_family"
+    "SUPPORT_GROUP", ""
 )  
 
 
@@ -130,7 +130,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/venombolteop/VenomMusic")
+GITHUB_REPO = getenv("GITHUB_REPO", "")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -194,67 +194,67 @@ autoclean = []
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://te.legra.ph/file/7d9c0fec898bbee09ba95.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg",
 )
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://te.legra.ph/file/95fcd2ec79b527ae3fac4.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "https://te.legra.ph/file/f739e6067725fa88ce8d3.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
     "GLOBAL_IMG_URL",
-    "https://te.legra.ph/file/95fcd2ec79b527ae3fac4.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg",
 )
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "https://te.legra.ph/file/c66abbf490158487fdb72.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
     "TELEGRAM_AUDIO_URL",
-    "https://te.legra.ph/file/3d130381bf5945c139023.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg",
 )
 
 TELEGRAM_VIDEO_URL = getenv(
     "TELEGRAM_VIDEO_URL",
-    "https://te.legra.ph/file/d3663021fb51e14a84aa9.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg",
 )
 
 STREAM_IMG_URL = getenv(
     "STREAM_IMG_URL",
-    "https://te.legra.ph/file/248e6858de3f2e37393c1.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg",
 )
 
 SOUNCLOUD_IMG_URL = getenv(
     "SOUNCLOUD_IMG_URL",
-    "https://te.legra.ph/file/1b78431fe8de0e497c188.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg",
 )
 
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
-    "https://te.legra.ph/file/98622051acad1988886be.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
     "SPOTIFY_ARTIST_IMG_URL",
-    "https://te.legra.ph/file/c03f25028fa248401d519.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg",
 )
 
 SPOTIFY_ALBUM_IMG_URL = getenv(
     "SPOTIFY_ALBUM_IMG_URL",
-    "https://te.legra.ph/file/9fe24bde84b1d31f685a9.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg",
 )
 
 SPOTIFY_PLAYLIST_IMG_URL = getenv(
     "SPOTIFY_PLAYLIST_IMG_URL",
-    "https://te.legra.ph/file/7345db59ab5d2c5cb142a.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg",
 )
 
 
@@ -301,7 +301,7 @@ if GITHUB_REPO:
 
 
 if PING_IMG_URL:
-    if PING_IMG_URL != "https://te.legra.ph/file/95fcd2ec79b527ae3fac4.jpg":
+    if PING_IMG_URL != "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
             print(
                 "[ERROR] - Your PING_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -309,7 +309,7 @@ if PING_IMG_URL:
             sys.exit()
 
 if PLAYLIST_IMG_URL:
-    if PLAYLIST_IMG_URL != "https://te.legra.ph/file/f739e6067725fa88ce8d3.jpg":
+    if PLAYLIST_IMG_URL != "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg":
         if not re.match("(?:http|https)://", PLAYLIST_IMG_URL):
             print(
                 "[ERROR] - Your PLAYLIST_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -317,7 +317,7 @@ if PLAYLIST_IMG_URL:
             sys.exit()
 
 if GLOBAL_IMG_URL:
-    if GLOBAL_IMG_URL != "https://te.legra.ph/file/1b78431fe8de0e497c188.jpg":
+    if GLOBAL_IMG_URL != "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg":
         if not re.match("(?:http|https)://", GLOBAL_IMG_URL):
             print(
                 "[ERROR] - Your GLOBAL_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -326,7 +326,7 @@ if GLOBAL_IMG_URL:
 
 
 if STATS_IMG_URL:
-    if STATS_IMG_URL != "https://te.legra.ph/file/c66abbf490158487fdb72.jpg":
+    if STATS_IMG_URL != "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg":
         if not re.match("(?:http|https)://", STATS_IMG_URL):
             print(
                 "[ERROR] - Your STATS_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -335,7 +335,7 @@ if STATS_IMG_URL:
 
 
 if TELEGRAM_AUDIO_URL:
-    if TELEGRAM_AUDIO_URL != "https://te.legra.ph/file/3d130381bf5945c139023.jpg":
+    if TELEGRAM_AUDIO_URL != "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg":
         if not re.match("(?:http|https)://", TELEGRAM_AUDIO_URL):
             print(
                 "[ERROR] - Your TELEGRAM_AUDIO_URL url is wrong. Please ensure that it starts with https://"
@@ -344,7 +344,7 @@ if TELEGRAM_AUDIO_URL:
 
 
 if STREAM_IMG_URL:
-    if STREAM_IMG_URL != "https://te.legra.ph/file/248e6858de3f2e37393c1.jpg":
+    if STREAM_IMG_URL != "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg":
         if not re.match("(?:http|https)://", STREAM_IMG_URL):
             print(
                 "[ERROR] - Your STREAM_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -353,7 +353,7 @@ if STREAM_IMG_URL:
 
 
 if SOUNCLOUD_IMG_URL:
-    if SOUNCLOUD_IMG_URL != "https://te.legra.ph/file/1b78431fe8de0e497c188.jpg":
+    if SOUNCLOUD_IMG_URL != "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg":
         if not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL):
             print(
                 "[ERROR] - Your SOUNCLOUD_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -361,7 +361,7 @@ if SOUNCLOUD_IMG_URL:
             sys.exit()
 
 if YOUTUBE_IMG_URL:
-    if YOUTUBE_IMG_URL != "https://te.legra.ph/file/98622051acad1988886be.jpg":
+    if YOUTUBE_IMG_URL != "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg":
         if not re.match("(?:http|https)://", YOUTUBE_IMG_URL):
             print(
                 "[ERROR] - Your YOUTUBE_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -370,7 +370,7 @@ if YOUTUBE_IMG_URL:
 
 
 if TELEGRAM_VIDEO_URL:
-    if TELEGRAM_VIDEO_URL != "https://te.legra.ph/file/d3663021fb51e14a84aa9.jpg":
+    if TELEGRAM_VIDEO_URL != "https://static.vecteezy.com/system/resources/thumbnails/024/295/482/small/colorful-music-background-illustration-ai-generative-free-photo.jpg":
         if not re.match("(?:http|https)://", TELEGRAM_VIDEO_URL):
             print(
                 "[ERROR] - Your TELEGRAM_VIDEO_URL url is wrong. Please ensure that it starts with https://"
